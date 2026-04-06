@@ -15,7 +15,8 @@
     "test:actions": "jest --testPathPattern=tests/integration/actions",
     "test:api": "jest --testPathPattern=tests/integration/api",
     "test:watch:integration": "jest --watch --selectProjects server",
-    "test:coverage:integration": "jest --coverage --selectProjects server"
+    "test:coverage:integration": "jest --coverage --selectProjects server",
+    "start:test": "dotenv -e .env.test --next start"
   },
   "dependencies": {
     "@ai-sdk/openai": "^2.0.47",
@@ -39,6 +40,7 @@
     "clsx": "^2.1.1",
     "cm6-theme-basic-dark": "^0.2.0",
     "dayjs": "^1.11.18",
+    "dotenv-cli": "^11.0.0",
     "lucide-react": "^0.545.0",
     "mongoose": "^8.19.1",
     "next": "15.5.7",
@@ -58,6 +60,7 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
+    "@playwright/test": "^1.58.2",
     "@tailwindcss/postcss": "^4",
     "@tailwindcss/typography": "^0.5.19",
     "@testing-library/dom": "^10.4.1",
