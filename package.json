@@ -16,7 +16,9 @@
     "test:api": "jest --testPathPattern=tests/integration/api",
     "test:watch:integration": "jest --watch --selectProjects server",
     "test:coverage:integration": "jest --coverage --selectProjects server",
-    "start:test": "dotenv -e .env.test --next start"
+    "start:test": "dotenv -e .env.test -- next build && next start",
+    "test:e2e": "playwright test",
+    "test:report": "playwright show-report"
   },
   "dependencies": {
     "@ai-sdk/openai": "^2.0.47",

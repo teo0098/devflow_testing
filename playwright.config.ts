@@ -33,8 +33,13 @@ export default defineConfig({
 
   projects: [
     {
+      name: "setup-chromium",
+      testMatch: "tests/e2e/setup/auth.chromium.setup.ts",
+    },
+    {
       name: "chromium",
-      use: { ...devices["Desktop Chrome"] },
+      use: { ...devices["Desktop Chrome"], storageState: "storage/user_chrome.json" },
+      dependencies: ["setup-chromium"],
     },
 
     {
