@@ -7,7 +7,8 @@ export interface TestQuestion {
 export const SAMPLE_QUESTIONS: TestQuestion[] = [
   {
     title: "How to user Reac hooks effectively",
-    content: "I am learning React and want to understand how to use hooks properly. What are the best practices?",
+    content:
+      "I am learning React and want to understand how to use hooks properly. What are the best practices? What are the different state management patterns in React? When should I user Context vs Redux?",
     tags: ["react", "javascript", "hooks"],
   },
   {
